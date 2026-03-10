@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node migrate.js && node index.js",
+    "start": "cd server && npm install && node migrate.js && node index.js",
+    "build": "cd server && npm install",
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
